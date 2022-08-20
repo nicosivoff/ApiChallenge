@@ -14,6 +14,7 @@ namespace WebApplication.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            return string.Empty;
         }
     }
 }
