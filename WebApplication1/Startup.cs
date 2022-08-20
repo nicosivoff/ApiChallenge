@@ -29,7 +29,10 @@ namespace WebApplication1
         {
 
             services.AddControllers();
+            // MediatR
             services.AddMediatR(typeof(Startup));
+            // AutoMapper
+            services.AddAutoMapper(typeof(Startup));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApplication1", Version = "v1" });
